@@ -9,7 +9,7 @@ public class HashTableMain {
     hashTable.put("mahi", 3);
     hashTable.put("abcd", 4);
 
-    hashTable.put("piu", 6);
+    hashTable.put("seth", 6);
     hashTable.put("roman", 10);
     hashTable.printHashTable();
 
