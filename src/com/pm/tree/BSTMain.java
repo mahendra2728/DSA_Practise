@@ -17,6 +17,10 @@ public class BSTMain {
     //Righ node
     binarySeachTree.insert(20);
     binarySeachTree.insert(12);
+    binarySeachTree.insert(50);
+    binarySeachTree.insert(30);
+    binarySeachTree.insert(1);
+    binarySeachTree.insert(60);
 
     binarySeachTree.root();
     binarySeachTree.left();
@@ -31,5 +35,7 @@ public class BSTMain {
     System.out.println(" 5 contains : "+binarySeachTree.contains(5));
     System.out.println("\n --------------------------------");
 
+    System.out.println("Max node value is : "+binarySeachTree.maxNodeValue());
+    System.out.println("Min node value is : "+binarySeachTree.minNodeValue());
   }
 }

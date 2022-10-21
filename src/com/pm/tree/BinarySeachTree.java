@@ -52,6 +52,27 @@ public class BinarySeachTree {
     return false;
   }
 
+  public int maxNodeValue(){
+    Node rootNode = root;
+    int value = rootNode.value;
+    while(rootNode.right !=null){
+      value = rootNode.right.value;
+      rootNode = rootNode.right;
+    }
+    return value;
+  }
+
+  public int minNodeValue(){
+    Node rootNode = root;
+    int value = rootNode.value;
+    while(rootNode.left !=null){
+      value = rootNode.left.value;
+      rootNode = rootNode.left;
+    }
+    return value;
+  }
+
+
   public void root() {
     System.out.println("root is : " + root.value);
   }
