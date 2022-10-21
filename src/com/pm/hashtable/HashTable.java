@@ -1,5 +1,7 @@
 package com.pm.hashtable;
 
+import java.util.ArrayList;
+
 public class HashTable {
 
   private int size = 6;
@@ -73,5 +75,18 @@ public class HashTable {
         tempNode = tempNode.next;
       }
     }
+  }
+
+  public ArrayList keys() {
+
+    ArrayList<String> allKeys = new ArrayList<String>();
+    for (int i = 0; i < dataMap.length; i++) {
+      Node tempNode = dataMap[i];
+      while (tempNode != null) {
+        allKeys.add(tempNode.key);
+        tempNode = tempNode.next;
+      }
+    }
+    return allKeys;
   }
 }

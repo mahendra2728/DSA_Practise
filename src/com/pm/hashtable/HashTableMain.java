@@ -16,5 +16,9 @@ public class HashTableMain {
     System.out.println("\n----------------------------");
 
     System.out.println("Get method " + hashTable.get("mahi"));
+
+    System.out.println("----------------------------");
+
+    System.out.println("All keys : " +hashTable.keys());
   }
 }
